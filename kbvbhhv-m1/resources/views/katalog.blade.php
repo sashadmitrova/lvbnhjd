@@ -1,35 +1,56 @@
 
 
+@extends('layouts.app')
 
+@section('content')
+<!-- <link rel="stylesheet" href="/public/style/katalog.css">
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/resources/css/style/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
+ <div class="slider">
+    <input type="radio" name="switch" id="btn1" checked>
+    <input type="radio" name="switch" id="btn2" checked>
+    <input type="radio" name="switch" id="btn3" checked>
+<div class="switch">
+    <label for="btn1"></label>
+    <label for="btn2"></label>
+    <label for="btn3"></label>
+</div>
+<div class="slider-inner">
+    <div class="slides">
+        <img src="/public/img/21.jpg" alt="">
+        <img src="/public/img/41.jpg" alt="">
+        <img src="/public/img/21.jpg" alt="">
+    </div>
 
-
-
-
-
-
-<div class="map">
-    <h1>Наше местоположение</h1>
-    <img src="/resources/img/map.jpg" alt="img" width="50%" height="50%">
 </div>
 
 
+</div>  -->
+
+
+ 
 
 
 
 
 
 
-</body>
-</html>
+
+
+
+ <div class="im-q">
+    <img src="/public/img/21.jpg" alt="img">
+    <h3>Nintendo-controller</h3>
+    <p>5999 p.</p>
+</div> 
+
+
+
+
+ @endsection
+
+
+
+
+
+
+

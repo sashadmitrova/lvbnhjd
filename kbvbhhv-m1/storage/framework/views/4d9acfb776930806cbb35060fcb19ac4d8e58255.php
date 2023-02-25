@@ -1,0 +1,54 @@
+<?php $__env->startSection('content'); ?>
+<!-- <link rel="stylesheet" href="/public/style/katalog.css">
+
+ <div class="slider">
+    <input type="radio" name="switch" id="btn1" checked>
+    <input type="radio" name="switch" id="btn2" checked>
+    <input type="radio" name="switch" id="btn3" checked>
+<div class="switch">
+    <label for="btn1"></label>
+    <label for="btn2"></label>
+    <label for="btn3"></label>
+</div>
+<div class="slider-inner">
+    <div class="slides">
+        <img src="/public/img/21.jpg" alt="">
+        <img src="/public/img/41.jpg" alt="">
+        <img src="/public/img/21.jpg" alt="">
+    </div>
+
+</div>
+
+
+</div>  -->
+
+
+ 
+
+
+
+
+
+
+
+
+
+ <div class="im-q">
+    <img src="/public/img/21.jpg" alt="img">
+    <h3>Nintendo-controller</h3>
+    <p>5999 p.</p>
+</div> 
+
+
+
+
+ <?php $__env->stopSection(); ?>
+
+
+
+
+
+
+
+
+<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /srv/users/zytiurfp/kbvbhhv-m1/resources/views/katalog.blade.php ENDPATH**/ ?>
