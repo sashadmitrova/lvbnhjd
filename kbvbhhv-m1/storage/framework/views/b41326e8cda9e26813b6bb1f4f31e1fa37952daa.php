@@ -10,7 +10,7 @@
                         <?php else: ?>
                             <div class="carousel-item">
                                 <?php endif; ?>
-                                <img src="<?php echo e($obprod->img_url); ?>" class="d-block    carousel-img"
+                                <img src="<?php echo e($obprod->img_url); ?>" class="w-80  d-block carousel-img"
                                      alt="...">
                                 <p class="d-flex justify-content-around"><?php echo e($obprod->name); ?></p>
                             </div>

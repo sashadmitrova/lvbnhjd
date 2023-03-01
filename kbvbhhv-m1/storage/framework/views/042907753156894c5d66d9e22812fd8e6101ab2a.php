@@ -53,15 +53,6 @@
 
     </div>
 
-
-
-
-
-
-
-
-
-
     <div class="list">
         <div class="row">
             <?php $__currentLoopData = $prod; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $obprod): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
@@ -71,7 +62,6 @@
                         <div class="card-body">
                             <h5 class="card-title"><?php echo e($obprod->name); ?></h5>
                             <p class="card-text">Цена:<?php echo e($obprod->price); ?>руб</p>
-                            <p class="card-text">Разработчик: <?php echo e($obprod->country_of_origin); ?></p>
                             <p class="card-text">Год выпуска: <?php echo e($obprod->year_of_production); ?></p>
                             <a href="<?php echo e(url('/catalog/product')); ?>/<?php echo e($obprod->id); ?>" class="btn btn-primary">Подробнее</a>
                         </div>

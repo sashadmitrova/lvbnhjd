@@ -55,15 +55,6 @@
 
     </div>
 
-
-
-
-
-
-
-
-
-
     <div class="list">
         <div class="row">
             @foreach($prod as $obprod)
@@ -73,7 +64,6 @@
                         <div class="card-body">
                             <h5 class="card-title">{{$obprod->name}}</h5>
                             <p class="card-text">Цена:{{$obprod->price}}руб</p>
-                            <p class="card-text">Разработчик: {{$obprod->country_of_origin}}</p>
                             <p class="card-text">Год выпуска: {{$obprod->year_of_production}}</p>
                             <a href="{{url('/catalog/product')}}/{{$obprod->id}}" class="btn btn-primary">Подробнее</a>
                         </div>
