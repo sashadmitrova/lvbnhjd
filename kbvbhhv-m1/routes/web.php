@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\product;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,10 +20,12 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('/where', function () {
+    return view('where');
+});
+Route::get('/catalog/product/{id}', [App\Http\Controllers\oneproduct::class, 'onelist']);
+Route::get('/catalog', [product::class, 'prodlist']);
+Route::get('/catalog/filter/{id}', [product::class, 'filterr']);
+Route::get('/catalog/sort/{name}/{sort}', [product::class, 'prodlist']);
+Route::get('/about', [App\Http\Controllers\about::class, 'slider']);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/katalog', [App\Http\Controllers\CatalogController::class, 'index'])->name('katalog');
-Route::get('/pozition', [App\Http\Controllers\PozitionController::class, 'Poz'])->name('pozition');
-Route::get('/about', [App\Http\Controllers\aboutcontroller::class, 'about'])->name('about');
-
-
-

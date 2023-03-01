@@ -10,6 +10,34 @@
                         <?php echo csrf_field(); ?>
 
                         <div class="row mb-3">
+                            <label for="login" class="col-md-4 col-form-label text-md-end"><?php echo e(__('Login')); ?></label>
+
+                            <div class="col-md-6">
+                                <input id="login" type="text" class="form-control <?php $__errorArgs = ['login'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>" name="login" value="<?php echo e(old('login')); ?>" required autocomplete="login" autofocus>
+
+                                <?php $__errorArgs = ['login'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+                                <span class="invalid-feedback" role="alert">
+                                        <strong><?php echo e($message); ?></strong>
+                                    </span>
+                                <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
                             <label for="name" class="col-md-4 col-form-label text-md-end"><?php echo e(__('Name')); ?></label>
 
                             <div class="col-md-6">
@@ -38,24 +66,24 @@ unset($__errorArgs, $__bag); ?>
                         </div>
 
                         <div class="row mb-3">
-                            <label for="surename" class="col-md-4 col-form-label text-md-end"><?php echo e(__('SureName')); ?></label>
+                            <label for="surname" class="col-md-4 col-form-label text-md-end"><?php echo e(__('Surname')); ?></label>
 
                             <div class="col-md-6">
-                                <input id="surename" type="text" class="form-control <?php $__errorArgs = ['surename'];
+                                <input id="surname" type="text" class="form-control <?php $__errorArgs = ['surname'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
 if (isset($message)) { $__messageOriginal = $message; }
 $message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
-unset($__errorArgs, $__bag); ?>" name="surename" value="<?php echo e(old('surename')); ?>" required autocomplete="surename" autofocus>
+unset($__errorArgs, $__bag); ?>" name="surname" value="<?php echo e(old('surname')); ?>" required autocomplete="surname" autofocus>
 
-                                <?php $__errorArgs = ['surename'];
+                                <?php $__errorArgs = ['surname'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
 if (isset($message)) { $__messageOriginal = $message; }
 $message = $__bag->first($__errorArgs[0]); ?>
-                                    <span class="invalid-feedback" role="alert">
+                                <span class="invalid-feedback" role="alert">
                                         <strong><?php echo e($message); ?></strong>
                                     </span>
                                 <?php unset($message);
@@ -64,7 +92,6 @@ endif;
 unset($__errorArgs, $__bag); ?>
                             </div>
                         </div>
-
                         <div class="row mb-3">
                             <label for="patronymic" class="col-md-4 col-form-label text-md-end"><?php echo e(__('Patronymic')); ?></label>
 
@@ -76,42 +103,14 @@ if (isset($message)) { $__messageOriginal = $message; }
 $message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
-unset($__errorArgs, $__bag); ?>" name="patronymic" value="<?php echo e(old('patronymic')); ?>"  autocomplete="patronymic" autofocus>
+unset($__errorArgs, $__bag); ?>" name="patronymic" value="<?php echo e(old('patronymic')); ?>" required autocomplete="patronymic" autofocus>
 
                                 <?php $__errorArgs = ['patronymic'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
 if (isset($message)) { $__messageOriginal = $message; }
 $message = $__bag->first($__errorArgs[0]); ?>
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong><?php echo e($message); ?></strong>
-                                    </span>
-                                <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <label for="login" class="col-md-4 col-form-label text-md-end"><?php echo e(__('Login')); ?></label>
-
-                            <div class="col-md-6">
-                                <input id="login" type="text" class="form-control <?php $__errorArgs = ['login'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>" name="login" value="<?php echo e(old('login')); ?>" required autocomplete="login" autofocus>
-
-                                <?php $__errorArgs = ['login'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?>
-                                    <span class="invalid-feedback" role="alert">
+                                <span class="invalid-feedback" role="alert">
                                         <strong><?php echo e($message); ?></strong>
                                     </span>
                                 <?php unset($message);
@@ -184,15 +183,6 @@ unset($__errorArgs, $__bag); ?>
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
-
-                            <div class="row mb-3">
-                                <div class="col-md-4 col-form-label text-md-end">
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="expamleCheck1" required>
-                                        <label for="form-check-input" for="expamleCheck1">Agree</label>
-                                    </div>
-                                </div>
-                            </div>
 
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">

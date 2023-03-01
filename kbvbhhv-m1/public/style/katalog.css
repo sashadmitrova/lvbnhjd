@@ -1,7 +1,30 @@
 .im-q h3{
     font-size: 20px;
+    color: aliceblue;
 }
-.im-q img{
-    width: 250px;
-    height: 250px;
+.card img {
+padding:20px;
+    width: 200px;
+    height: 210px;
+    justify-content: center;
 }
+
+.card{
+    background-color: rgb(136, 182, 194);
+    margin-top: 50px;
+margin: 15%;
+justify-content:center;
+    justify-content: center;
+}
+
+  .card-text{
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+  }
+  .card-title{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+  }
+  .btn-primary{
+ background-color: rgb(17, 82, 82);
+  }
