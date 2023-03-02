@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<link rel="stylesheet" href="/public/style/about.css">
     <h2 class="d-flex justify-content-center">О нас</h2>
     <h3 class="d-flex justify-content-center">Дивиз компании</h3>
     <h2 class="d-flex justify-content-center">Наши новинки</h2>
@@ -12,9 +13,9 @@
                         @else
                             <div class="carousel-item">
                                 @endif
-                                <img src="{{$obprod->img_url}}" class="w-80  d-block carousel-img"
+                                <img src="{{$obprod->img_url}}" class="w-10 h-20 d-block carousel-img"
                                      alt="...">
-                                <p class="d-flex justify-content-around">{{$obprod->name}}</p>
+                                <p class="d-flex2 justify-content-around">{{$obprod->name}}</p>
                             </div>
 
                             @endforeach

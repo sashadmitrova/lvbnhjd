@@ -16,14 +16,6 @@
                 <li><a class="dropdown-item" href="<?php echo e(url('/catalog')); ?>">сборосить фильтр</a></li>
             </ul>
         </div>
-               
-
-
-
-
-
-
-
 
         <div class="dropdown">
             <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton1"
@@ -67,9 +59,14 @@
                         </div>
                     </div>
                 </div>
+
+
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </div>
     </div>
 <?php $__env->stopSection(); ?>
+
+
+
 
 <?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /srv/users/zytiurfp/kbvbhhv-m1/resources/views/cataloglist.blade.php ENDPATH**/ ?>

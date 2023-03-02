@@ -3,7 +3,7 @@
 @section('content')
 
 
-
+<link rel="stylesheet" href="/public/style/admin.css">
 <h1 class="d-flex justify-content-center">Админка</h1>
     <h3 class="d-flex justify-content-center">Управление товаром</h3>
     <div class="container">

@@ -18,14 +18,6 @@
                 <li><a class="dropdown-item" href="{{url('/catalog')}}">сборосить фильтр</a></li>
             </ul>
         </div>
-               
-
-
-
-
-
-
-
 
         <div class="dropdown">
             <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton1"
@@ -69,7 +61,12 @@
                         </div>
                     </div>
                 </div>
+
+
             @endforeach
         </div>
     </div>
 @endsection
+
+
+

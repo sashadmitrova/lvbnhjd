@@ -1,4 +1,5 @@
 <?php $__env->startSection('content'); ?>
+<link rel="stylesheet" href="/public/style/about.css">
     <h2 class="d-flex justify-content-center">О нас</h2>
     <h3 class="d-flex justify-content-center">Дивиз компании</h3>
     <h2 class="d-flex justify-content-center">Наши новинки</h2>
@@ -10,9 +11,9 @@
                         <?php else: ?>
                             <div class="carousel-item">
                                 <?php endif; ?>
-                                <img src="<?php echo e($obprod->img_url); ?>" class="w-80  d-block carousel-img"
+                                <img src="<?php echo e($obprod->img_url); ?>" class="w-10 h-20 d-block carousel-img"
                                      alt="...">
-                                <p class="d-flex justify-content-around"><?php echo e($obprod->name); ?></p>
+                                <p class="d-flex2 justify-content-around"><?php echo e($obprod->name); ?></p>
                             </div>
 
                             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
@@ -30,4 +31,5 @@
         </div>
 
 <?php $__env->stopSection(); ?>
+
 <?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /srv/users/zytiurfp/kbvbhhv-m1/resources/views/index.blade.php ENDPATH**/ ?>

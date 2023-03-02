@@ -1,0 +1,18 @@
+.carousel-item > img{
+margin-top: 100px;
+margin-left: 33%;
+width: 670px;
+height: 600px;
+box-shadow: 0 10px 20px;
+}
+.carousel-item{
+    background-color: rgb(156, 171, 172);
+    box-shadow: 0 10px 2px;
+    color: rgb(72, 72, 138);
+
+}
+.d-flex2{
+color: rgb(255, 255, 255);
+text-align: center;
+margin-top: 40px;
+}
