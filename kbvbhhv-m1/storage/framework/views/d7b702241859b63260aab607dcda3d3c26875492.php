@@ -6,7 +6,7 @@
     <h3 class="d-flex justify-content-center">Управление товаром</h3>
     <div class="container">
         <div class="row">
-            <a href="" class="btn btn-info justify-content-center">создать товар</a>
+            <a href="<?php echo e(url('/admin/product')); ?>" class="btn btn-info justify-content-center">создать товар</a>
         </div>
         <?php $__currentLoopData = $prod; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $obprod): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
             <div class="row">

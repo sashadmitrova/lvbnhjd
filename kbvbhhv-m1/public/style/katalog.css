@@ -6,14 +6,16 @@
 padding:20px;
     width: 200px;
     height: 190px;
+    justify-content: center;
 
 }
 
 .card{
     background-color: rgb(255, 255, 255);
  box-shadow: 0 10px 25px;
-    margin-top: 50px;
-margin: 15%;
+    margin-top: 10px;
+    color: aquamarine;
+margin: 5%;
 justify-content:center;
     justify-content: center;
 }
