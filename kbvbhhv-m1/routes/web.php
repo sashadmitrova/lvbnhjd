@@ -33,6 +33,9 @@ Route::get('/about', [App\Http\Controllers\about::class, 'slider']);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/admin', [admin::class, 'admin'])->name('admin');
-Route::get('/admin/product', [admin::class, 'createproduct']);
 Route::get('/admin/cat', function () { return view('createcat');});
 Route::post('/admin/cat/create',[admin::class,'creatcat'])->name('createcat');
+
+
+Route::get('/admin/product', [admin::class, 'createprod']);
+Route::post('/admin/product/create',[admin::class,'prodcreate'])->name('createprod');

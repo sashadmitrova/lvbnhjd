@@ -26,4 +26,30 @@
             </div>
         @endforeach
 
+
+        <div class="container">
+            <div class="row">
+                <a href="{{url('/admin/cat')}}" class="btn btn-info justify-content-center">создать категорию</a>
+            </div>
+            @foreach($cat as $obprod)
+                <div class="row">
+                    <div class="col">
+                        <h3>{{$obprod->name}}</h3> 
+                    </div>
+                    <div class="col">
+                        <a href="" class="btn btn-primary ">Редактировать</a>
+                       
+                    </div>
+                    <div class="col">
+                        <a href="{{url('/admin/cat/delete/')}}/{{$obprod->id}}" class="btn btn-danger">Удалить</a>
+                    </div> 
+    
+                </div>
+            @endforeach
+        
+        
+
+
+
+
 @endsection
