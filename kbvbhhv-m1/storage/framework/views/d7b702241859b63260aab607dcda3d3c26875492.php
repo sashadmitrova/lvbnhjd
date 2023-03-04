@@ -11,15 +11,15 @@
         <?php $__currentLoopData = $prod; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $obprod): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
             <div class="row">
                 <div class="col">
-                    <h3><?php echo e($obprod->name); ?></h3>  <!-- тут назавние товара выводится из базы данных-->
+                    <h3><?php echo e($obprod->name); ?></h3> 
                 </div>
                 <div class="col">
                     <a href="" class="btn btn-primary ">Редактировать</a>
-                    <!-- это кнопка отвечает за редактирования товара -->
+                   
                 </div>
                 <div class="col">
                     <a href="<?php echo e(url('/admin/product/delete/')); ?>/<?php echo e($obprod->id); ?>" class="btn btn-danger">Удалить</a>
-                </div> <!-- это кнопка отвечает за удаление товара из базы данных -->
+                </div> 
 
             </div>
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

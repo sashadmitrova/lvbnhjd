@@ -13,15 +13,15 @@
         @foreach($prod as $obprod)
             <div class="row">
                 <div class="col">
-                    <h3>{{$obprod->name}}</h3>  <!-- тут назавние товара выводится из базы данных-->
+                    <h3>{{$obprod->name}}</h3> 
                 </div>
                 <div class="col">
                     <a href="" class="btn btn-primary ">Редактировать</a>
-                    <!-- это кнопка отвечает за редактирования товара -->
+                   
                 </div>
                 <div class="col">
                     <a href="{{url('/admin/product/delete/')}}/{{$obprod->id}}" class="btn btn-danger">Удалить</a>
-                </div> <!-- это кнопка отвечает за удаление товара из базы данных -->
+                </div> 
 
             </div>
         @endforeach

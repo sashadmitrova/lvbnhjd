@@ -1,0 +1,1 @@
+[Sat Mar 04 01:17:27.184477 2023] [php:error] [pid 6483] [client 192.168.2.169:56813] PHP Fatal error:  Access level to App\\Models\\category::$fillable must be protected (as in class Illuminate\\Database\\Eloquent\\Model) or weaker in /srv/users/zytiurfp/kbvbhhv-m1/app/Models/category.php on line 8, referer: http://kbvbhhv-m1.wsr.ru/public/admin/cat

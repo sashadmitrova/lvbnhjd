@@ -1,4 +1,5 @@
 <!doctype html>
+<link rel="stylesheet" href="/public/style/navbar.css">
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">

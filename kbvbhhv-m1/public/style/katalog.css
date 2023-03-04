@@ -2,13 +2,7 @@
     font-size: 20px;
     color: aliceblue;
 }
-.card img {
-padding:20px;
-    width: 200px;
-    height: 190px;
-    justify-content: center;
 
-}
 
 .card{
     background-color: rgb(255, 255, 255);

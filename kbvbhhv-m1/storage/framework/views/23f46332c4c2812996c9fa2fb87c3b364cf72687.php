@@ -1,4 +1,5 @@
 <!doctype html>
+<link rel="stylesheet" href="/public/style/navbar.css">
 <html lang="<?php echo e(str_replace('_', '-', app()->getLocale())); ?>">
 <head>
     <meta charset="utf-8">
