@@ -77,7 +77,7 @@
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="<?php echo e(url('/cart')); ?>/<?php echo e(Auth::user()->id); ?>">Карзина</a>
+                                <a class="dropdown-item" href="<?php echo e(url('/basket')); ?>/<?php echo e(Auth::user()->id); ?>">Корзина</a>
                                 <a class="dropdown-item" href="<?php echo e(route('logout')); ?>"
                                    onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

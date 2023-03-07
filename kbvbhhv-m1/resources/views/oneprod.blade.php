@@ -14,7 +14,7 @@
                     <h2>{{$obprod->name}}</h2>
                     <h2>Цена: {{$obprod->price}}рублей.</h2>
                     @if($obprod->count>0)
-                        <a href="" class="btn btn-primary">В карзину</a>
+                        <a href="{{url('/basket')}}/{{$obprod->id}}" class="btn btn-primary">В карзину</a>
                     @else
                         <a class="btn btn-primary disabled" href="">НЕТ В НАЛИЧИИ</a>
                     @endif

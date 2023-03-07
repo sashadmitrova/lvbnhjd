@@ -12,7 +12,7 @@
                     <h2><?php echo e($obprod->name); ?></h2>
                     <h2>Цена: <?php echo e($obprod->price); ?>рублей.</h2>
                     <?php if($obprod->count>0): ?>
-                        <a href="" class="btn btn-primary">В карзину</a>
+                        <a href="<?php echo e(url('/basket')); ?>/<?php echo e($obprod->id); ?>" class="btn btn-primary">В карзину</a>
                     <?php else: ?>
                         <a class="btn btn-primary disabled" href="">НЕТ В НАЛИЧИИ</a>
                     <?php endif; ?>

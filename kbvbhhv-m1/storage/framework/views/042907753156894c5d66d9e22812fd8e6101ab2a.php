@@ -49,8 +49,8 @@
         <div class="row">
             <?php $__currentLoopData = $prod; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $obprod): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <div class="col-md-2">
-                    <div class="card h-190 " style="width: 16;">
-                        <img src="<?php echo e($obprod->img_url); ?>" class="card-img-top h-90" alt="...">
+                    <div class="card h-10 " style="width: 20">
+                        <img src="<?php echo e($obprod->img_url); ?>" class="card-img-top h-50" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"><?php echo e($obprod->name); ?></h5>
                             <p class="card-text">Цена:<?php echo e($obprod->price); ?>руб</p>

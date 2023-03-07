@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\category;
 use Illuminate\Http\Request;
 use App\Models\product;
 
@@ -14,6 +15,20 @@ class admin extends Controller
         return view('admin', ['prod' => $prod,'cat'=>$cat ]);
     
     }
+    public function proddel($id)
+    {
+        product::where('id', $id)->delete();
+        return redirect(route('admin'));
+    }
+
+    public function catdel($id)
+    {
+        category::where('id', $id)->delete();
+        return redirect(route('admin'));
+    }
+
+
+    
     public function creatcat(Request $request){
         \App\Models\category::create([
             'name'=>$request->input('name')
@@ -44,5 +59,6 @@ class admin extends Controller
 
         return redirect(route('admin'));
     }
+   
 }
 

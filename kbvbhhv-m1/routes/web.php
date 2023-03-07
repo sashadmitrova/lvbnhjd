@@ -3,6 +3,7 @@
 use App\Http\Controllers\product;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\admin;
+use App\Http\Controllers\Basket;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -39,3 +40,7 @@ Route::post('/admin/cat/create',[admin::class,'creatcat'])->name('createcat');
 
 Route::get('/admin/product', [admin::class, 'createprod']);
 Route::post('/admin/product/create',[admin::class,'prodcreate'])->name('createprod');
+Route::get('/admin/product/delete/{id}',[admin::class,'proddel']);
+Route::get('/admin/cat/delete/{id}',[admin::class,'catdel']);
+
+Route::get('/basket',[basket::class,'basket']);
