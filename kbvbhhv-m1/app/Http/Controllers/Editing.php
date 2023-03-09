@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class Basket extends Controller
+class Editing extends Controller
 {
     //
 }

@@ -13,15 +13,15 @@
         @foreach($prod as $obprod)
             <div class="row">
                 <div class="col">
-                    <h3>{{$obprod->name}}</h3> 
+                    <h3>{{$obprod->name}}</h3>
                 </div>
                 <div class="col">
                     <a href="" class="btn btn-primary ">Редактировать</a>
-                   
+
                 </div>
                 <div class="col">
                     <a href="{{url('/admin/product/delete/')}}/{{$obprod->id}}" class="btn btn-danger">Удалить</a>
-                </div> 
+                </div>
 
             </div>
         @endforeach
@@ -34,20 +34,20 @@
             @foreach($cat as $obprod)
                 <div class="row">
                     <div class="col">
-                        <h3>{{$obprod->name}}</h3> 
+                        <h3>{{$obprod->name}}</h3>
                     </div>
                     <div class="col">
-                        <a href="" class="btn btn-primary ">Редактировать</a>
-                       
+                        <a href="{{ url('/admin/editing/')}}/{{ $obprod}}" class="btn btn-primary ">Редактировать</a>
+
                     </div>
                     <div class="col">
                         <a href="{{url('/admin/cat/delete/')}}/{{$obprod->id}}" class="btn btn-danger">Удалить</a>
-                    </div> 
-    
+                    </div>
+
                 </div>
             @endforeach
-        
-        
+
+
 
 
 

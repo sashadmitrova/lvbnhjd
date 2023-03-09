@@ -66,7 +66,7 @@ unset($__errorArgs, $__bag); ?>
                         </div>
 
                         <div class="row mb-3">
-                            <label for="surname" class="col-md-4 col-form-label text-md-end"><?php echo e(__('Surname')); ?></label>
+                            <label for="surename" class="col-md-4 col-form-label text-md-end"><?php echo e(__('Surname')); ?></label>
 
                             <div class="col-md-6">
                                 <input id="surename" type="text" class="form-control <?php $__errorArgs = ['surename'];

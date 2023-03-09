@@ -45,10 +45,17 @@
                     <?php if(auth()->guard()->guest()): ?>
                         <?php if(Route::has('login')): ?>
                         <?php endif; ?>
+
+
+
                     <?php else: ?>
+
+                     <?php if(!Auth::check() || !Auth::user()->isAdmin()): ?>
+
                         <li class="nav-item">
                             <a class="nav-link" href="<?php echo e(url('/admin')); ?>">админка</a>
                         </li>
+                         <?php endif; ?>
 
                     <?php endif; ?>
                 </ul>
@@ -96,7 +103,7 @@
         </div>
     </nav>
 
-    <main class="py-4">
+    <main class="py-5">
         <?php echo $__env->yieldContent('content'); ?>
     </main>
 </div>

@@ -45,10 +45,17 @@
                     @guest
                         @if(Route::has('login'))
                         @endif
+
+
+
                     @else
+
+                     @if(!Auth::check() || !Auth::user()->isAdmin())
+
                         <li class="nav-item">
                             <a class="nav-link" href="{{url('/admin')}}">админка</a>
                         </li>
+                         @endif
 
                     @endguest
                 </ul>
@@ -94,7 +101,7 @@
         </div>
     </nav>
 
-    <main class="py-4">
+    <main class="py-5">
         @yield('content')
     </main>
 </div>

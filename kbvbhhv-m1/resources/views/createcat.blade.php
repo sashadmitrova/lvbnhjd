@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-
+<link rel="stylesheet" href="/public/style/creatcat.css">
 <div class="row justify-content-center">
     <div class="col-mb-8">
         <div class="card">
@@ -27,7 +27,7 @@
                             </form>
                         </div>
                     </div>
-                
+
             </div>
         </div>
     </div>

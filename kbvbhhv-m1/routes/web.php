@@ -43,4 +43,7 @@ Route::post('/admin/product/create',[admin::class,'prodcreate'])->name('createpr
 Route::get('/admin/product/delete/{id}',[admin::class,'proddel']);
 Route::get('/admin/cat/delete/{id}',[admin::class,'catdel']);
 
-Route::get('/basket',[basket::class,'basket']);
+
+Route::get('/admin/product/editing', [admin::class, 'Editingprod']);
+
+// Route::get('/basket',[basket::class,'basket']);

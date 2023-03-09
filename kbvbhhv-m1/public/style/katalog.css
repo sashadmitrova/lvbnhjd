@@ -15,7 +15,7 @@ padding: 205px;
     background-color: rgb(255, 255, 255);
  box-shadow: 0 10px 25px;
     margin-top: 10px;
-    color: aquamarine;
+    color: rgb(0, 0, 0);
 margin: 5%;
 justify-content:center;
     justify-content: center;
@@ -33,3 +33,23 @@ justify-content:center;
   .btn-primary{
  background-color: rgb(155, 78, 226);
   }
+.dropdown-item{
+  background-color: blueviolet;
+}
+
+.dropdown-menu{
+  background-color: aquamarine  ;
+  color: black;
+}
+.d-flex{
+  font-size: 30px;
+
+  color: rgb(0, 0, 0);
+}
+.card-img-top{
+  border-radius: 20px;
+
+  padding: 20px;
+}
+
+

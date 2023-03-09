@@ -1,0 +1,18 @@
+.mb-3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    color: white;
+}
+.card-body{
+    background: rgb(90,152,226);
+    background: linear-gradient(0deg, rgba(90,152,226,1) 0%, rgba(140,15,114,1) 100%);
+}
+.mb-3{
+
+    border-radius: 230px;
+}
+.btn-primary{
+    font-size: 25px;
+    background-color: rgba(90,152,226,1);
+    border-radius: 20px;
+}

@@ -1,8 +1,21 @@
+
 @extends('layouts.app')
 
 @section('content')
 
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" href="/public/style/basket.css">
-    <h1 class="d-flex justify-content-center">Корзина</h1>
+<h1>Корзина</h1>
 
+<div>
+    @foreach ($p as $j)
+
+            <div class="catalog-item">
+                <img src="{{$j->products->img}}" alt="*">
+                <p class="catalog-item-name">{{ $j->products->name}}</p>
+                <p class="catalog-item-price">{{ $j->products->price}}</p>
+                    <button type="submit" class="btn btn-primary"><a class="nav-link" href="/public/basket/{{$j->id}}/delete"> Удалить</a></button>
+            </div>
+                        @endforeach
+
+</div>
+
+@endsection
