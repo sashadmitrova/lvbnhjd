@@ -46,4 +46,10 @@ Route::get('/admin/cat/delete/{id}',[admin::class,'catdel']);
 
 Route::get('/admin/product/editing', [admin::class, 'Editingprod']);
 
-// Route::get('/basket',[basket::class,'basket']);
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/cart', [App\Http\Controllers\cartcontroller::class, 'index'])->name('cartIndex');
+    Route::get('/cart/add/{product}', [App\Http\Controllers\cartcontroller::class, 'add'])->name('cartAdd');
+    Route::get('/cart/remove/{id}', [App\Http\Controllers\cartcontroller::class, 'remove'])->name('cartRemove');
+    Route::post('cart/update/{id}',[App\Http\Controllers\cartcontroller::class,'update'])->name('cartUpadate');
+    
+    });
