@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <link rel="stylesheet" href="/public/style/creatprod.css">
+    <link rel="stylesheet" href="../public/style/creatprod.css">
 
     <div class="row justify-content-center">
         <div class="col-mb-8">

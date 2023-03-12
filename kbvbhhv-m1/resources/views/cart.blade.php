@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
     <div class="container">
-<link rel="stylesheet" href="/public/style/cart.css">
+<link rel="stylesheet" href="../public/style/cart.css">
 
     <h1 class="d-flex justify-content-center text-light">Корзина</h1>
         <div class="card row align-items-start">

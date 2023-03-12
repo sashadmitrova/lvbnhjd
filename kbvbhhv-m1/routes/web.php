@@ -33,7 +33,7 @@ Route::get('/catalog/sort/{name}/{sort}', [product::class, 'prodlist']);
 Route::get('/about', [App\Http\Controllers\about::class, 'slider']);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/admin', [admin::class, 'admin'])->name('admin');
+Route::get('/admin', [admin::class, 'admin'])->name('admin')->middleware('admin') ;
 Route::get('/admin/cat', function () { return view('createcat');});
 Route::post('/admin/cat/create',[admin::class,'creatcat'])->name('createcat');
 

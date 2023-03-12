@@ -2,7 +2,7 @@
 
 @section('content')
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" href="/public/style/katalog.css">
+<link rel="stylesheet" href="../public/style/katalog.css">
     <h1 class="d-flex justify-content-center">Каталог</h1>
     <div class="btn-group">
         <div class="dropdown">
@@ -52,7 +52,7 @@
             @foreach($prod as $obprod)
                 <div class="col-md-2">
                     <div class="card h-10 " style="width: 20">
-                        <img src="{{$obprod->img_url}}" class="card-img-top h-50" alt="...">
+                        <img src="{{url('/img')}}/{{$obprod->img_url}}" class="card-img-top h-50" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">{{$obprod->name}}</h5>
                             <p class="card-text">Цена:{{$obprod->price}}руб</p>

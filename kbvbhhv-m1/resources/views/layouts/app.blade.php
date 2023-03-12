@@ -1,5 +1,5 @@
 <!doctype html>
-<link rel="stylesheet" href="/public/style/navbar.css">
+<link rel="stylesheet" href="../public/style/navbar.css">
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
@@ -22,7 +22,7 @@
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
-                        <img  class="logo"  src="/public/img/Logo/Logo.jpg" alt="">
+                        <img  class="logo"  src="../public/img/Logo/Logo.jpg" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -42,22 +42,17 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{url('/catalog')}}">Каталог</a>
                     </li>
-                    @guest
-                        @if(Route::has('login'))
-                        @endif
 
-
+            @if(!Auth::check() || !Auth::user()->isAdmin())
 
                     @else
-
-                     @if(!Auth::check() || !Auth::user()->isAdmin())
-
                         <li class="nav-item">
                             <a class="nav-link" href="{{url('/admin')}}">админка</a>
                         </li>
-                         @endif
+                    @endif
 
-                    @endguest
+                    
+                      
                 </ul>
 
                 <!-- Right Side Of Navbar -->
