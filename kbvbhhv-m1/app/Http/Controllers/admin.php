@@ -59,6 +59,34 @@ class admin extends Controller
 
         return redirect(route('admin'));
     }
+
+    public function prodedit($id)
+    {   $prod = product::where('id',$id)->get();
+        $cat = category::all();
+        return view('editprod', ['cat' => $cat, 'prod'=>$prod]);
+    }
+    public  function produpdate(Request $request, $id){
+        $product=product::find($id);
+        $product->name = $request->input('name');
+        $product->price = $request->input('price');
+        $product->year_of_production = $request->input('year_of_production');
+        $product->country_of_origin =$request->input('country_of_origin');
+        $product->category = $request->input('category');
+        $product->model =$request->input('model');
+        $product->count = $request->input('count');
+
+        if ($request->hasFile('img_url')) {
+            $image = $request->file('img_url');
+            $filename = time() . '' . $image->getClientOriginalName();
+            $path = $request->file('img_url')->move(public_path('img'), $filename);
+            $product->img_url = $filename;
+            $product->save();
+        }
+        else{
+            $product->save();
+        }
+        return redirect(route('admin'));
+    }
    
 }
 

@@ -16,7 +16,7 @@
                     <h3>{{$obprod->name}}</h3>
                 </div>
                 <div class="col">
-                    <a href="" class="btn btn-primary ">Редактировать</a>
+                    <a href="{{route ('productedit',$obprod->id)}}" class="btn btn-primary ">Редактировать</a>
 
                 </div>
                 <div class="col">
