@@ -86,7 +86,19 @@ class admin extends Controller
             $product->save();
         }
         return redirect(route('admin'));
+
+        
     }
-   
+    public function catedit($id)
+    {  
+        $cat = category::where('id',$id)->get();
+        return view('catedit', ['cat' => $cat]);
+    }
+    public function catupdate(Request $request, $id){
+        $cat= category::find($id);
+        $cat->name= $request->input('name');
+        $cat->save();
+        return redirect(route('admin'));
+    }
 }
 

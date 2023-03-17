@@ -37,7 +37,7 @@
                         <h3>{{$obprod->name}}</h3>
                     </div>
                     <div class="col">
-                        <a href="{{ url('/admin/editing/')}}/{{ $obprod}}" class="btn btn-primary ">Редактировать</a>
+                        <a href="{{route ('categoryedit',$obprod->id)}}" class="btn btn-primary ">Редактировать</a>
 
                     </div>
                     <div class="col">

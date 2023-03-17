@@ -64,3 +64,6 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::get('/admin/product/edit/{id}',[admin::class,'prodedit'])->middleware('admin')->name('productedit');//редактирование продукта занесеного в базу данных
 Route::post('/admin/product/edit/update/{id}',[admin::class,'produpdate'])->name('produpdate');
+
+Route::get('/admin/category/edit/{id}',[admin::class,'catedit'])->middleware('admin')->name('categoryedit');//редактирование продукта занесеного в базу данных
+Route::post('/admin/category/edit/update/{id}',[admin::class,'catupdate'])->name('catupdate');
