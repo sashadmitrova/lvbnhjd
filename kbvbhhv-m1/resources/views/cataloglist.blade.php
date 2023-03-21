@@ -35,8 +35,7 @@
                 </li>
                 <li><a class="dropdown-item" href="{{url('/catalog/sort')}}/price/desc"/>от дорогих к дешевым</a>
                 </li>
-                <li><a class="dropdown-item" href="{{url('/catalog/sort')}}/year_of_production/desc"/>от недавно
-                    вышедшим к старым</a>
+                <li><a class="dropdown-item" href="{{url('/catalog/sort')}}/year_of_production/desc"/>Год выпуска</a>
                 </li>
                 <li><a class="dropdown-item" href="{{url('/catalog/sort')}}/year_of_production/asc"/>от старых к недавно
                     вышедшим</a>
@@ -52,12 +51,13 @@
             @foreach($prod as $obprod)
                 <div class="col-md-2">
                     <div class="card h-10 " style="width: 20">
-                        <img src="{{url('/img')}}/{{$obprod->img_url}}" class="card-img-top h-50" alt="...">
+                    <a href="{{url('/catalog/product')}}/{{$obprod->id}}" >   <img src="{{url('/img')}}/{{$obprod->img_url}}" class="card-img-top h-50" alt="..."></a>
                         <div class="card-body">
                             <h5 class="card-title">{{$obprod->name}}</h5>
                             <p class="card-text">Цена:{{$obprod->price}}руб</p>
                             <p class="card-text">Год выпуска: {{$obprod->year_of_production}}</p>
-                            <a href="{{url('/catalog/product')}}/{{$obprod->id}}" class="btn btn-primary">Подробнее</a>
+                            
+                          
                         </div>
                     </div>
                 </div>

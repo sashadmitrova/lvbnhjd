@@ -46,6 +46,10 @@ class cartcontroller extends Controller
         $cart_item = cart::where('id', $id)
             ->where('user_id', Auth::user()->id)
             ->firstOrFail();
+            $product = Product::find($cart_item->product_id);
+        if ($request->input('count') > $product->count) {
+            return redirect()->back()->with('error', 'Sorry, there are only ' . $product->count . ' units of this product available.');
+        }
 
         if ($request->input('count') > 0) {
             $cart_item->count = $request->input('count');
